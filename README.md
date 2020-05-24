@@ -1,4 +1,4 @@
-# MarchingCubeCaves
+# Marching cube caves
 A Roblox Lua implementation of the Marching Cubes algorithm, in this case used to generate cool triangular caves and ore veins with Perlin Noise.
 
 ![A cave](https://i.imgur.com/z7ItkEt.jpg)
