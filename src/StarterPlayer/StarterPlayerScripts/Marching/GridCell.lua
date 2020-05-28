@@ -25,7 +25,8 @@ local function renderTriangle(posA, posB, posC)
 end
 
 local function interpolateVerts(v1,  v2) 
-    return Vector3.new(v1.x, v1.y, v1.z):lerp(Vector3.new(v2.x, v2.y, v2.z), 0.5)
+    local t = (ISO_LEVEL - v1.w) / (v2.w - v1.w) 
+    return Vector3.new(v1.x, v1.y, v1.z):Lerp(Vector3.new(v2.x, v2.y, v2.z), t)
 end
 
 local worldModel = Instance.new("Model", workspace)
